@@ -1,5 +1,4 @@
 import MemberDetailModal from "@/components/MemberDetailModal";
-import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Suspense } from "react";
@@ -33,7 +32,6 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <MemberDetailModal />
         </Suspense>
-        <Analytics />
       </body>
     </html>
   );
